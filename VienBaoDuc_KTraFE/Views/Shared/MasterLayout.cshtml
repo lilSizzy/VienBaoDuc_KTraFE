@@ -5,9 +5,11 @@
     <title>Tiki Product Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Views/Shared/style-page.css"/>
     <style>
-        align-items: center;
-        margin: 10px 0;
+        body {
+            align-items: center;
+            margin: 10px 0;
         }
 
         .product-info .rating i {
@@ -333,6 +335,7 @@
                 color: #aaa; /* Màu chữ placeholder */
                 font-style: italic; /* Nghiêng chữ placeholder */
             }
+
     </style>
 </head>
 <body>
@@ -342,7 +345,7 @@
             <div class="header">
                 <div class="header-logo">
                     <!-- Thay đổi đường dẫn ảnh logo bằng Razor -->
-                    <img height="100" src="~/Content/Image/Logo_Tiki_2023.png" alt="Tiki Logo" width="80" />
+                    <img height="100" src="~/Content/images/tiki-logo.png" alt="Tiki Logo" width="80" />
 
                     <!-- Thanh tìm kiếm -->
                     <input placeholder="Giao nhanh 2h" type="text" />
@@ -382,14 +385,15 @@
             <section>
                 <div class="left-column">
                     <div class="product-images">
-                        <img id="mainImage" src="~/Content/Image/anhlonsua.png" alt="Product Image" width="400" height="400" />
+                        <img id="mainImage" src="~/Content/images/anh-hop-sua.jpg" alt="Product Image" width="400" height="400" />
                     </div>
 
                     <div class="product-thumbnails">
-                        <img class="thumbnail" src="~/Content/Thumpnail/thumpnail.png" alt="Thumbnail 1" width="60" height="60" />
-                        <img class="thumbnail" src="~/Content/Thumpnail/thumpnail2.png" alt="Thumbnail 2" width="60" height="60" />
-                        <img class="thumbnail" src="~/Content/Thumpnail/thumpnail3.png" alt="Thumbnail 3" width="60" height="60" />
-                        <img class="thumbnail" src="~/Content/Thumpnail/thumpnail4.png" alt="Thumbnail 4" width="60" height="60" />
+                        <img class="thumbnail" src="~/Content/images/anh-hop-sua.jpg" alt="Thumbnail 1" width="60" height="60" />
+                        <img class="thumbnail" src="~/Content/images/anh-hop-sua-1.jpg" alt="Thumbnail 1" width="60" height="60" />
+                        <img class="thumbnail" src="~/Content/images/anh-phia-sau-hop-sua.jpg" alt="Thumbnail 2" width="60" height="60" />
+                        <img class="thumbnail" src="~/Content/images/anh-thong-tin-dinh-duong.jpg" alt="Thumbnail 3" width="60" height="60" />
+                        <img class="thumbnail" src="~/Content/images/anh-hop-sua-va-khoi-luong.jpg" alt="Thumbnail 4" width="60" height="60" />
                     </div>
                 </div>
             </section>
@@ -484,10 +488,13 @@
                                     <td valign="middle">
                                         <div class="header">
                                             <!-- Thay đổi đường dẫn ảnh logo bằng Razor -->
-                                            <img height="100" src="~/Content/Image/Logo_Tiki_2023.png" alt="Tiki Logo" width="50" />
+                                            <img height="100" src="~/Content/images/tiki-logo.png" alt="Tiki Logo" width="50" />
+                                            <br />
+                                            <span>Tiki Trading</span>
+                                        </div>
                                     </td>
 
-                                    <td rowspan="2">Tiki Trading<br />4.7 <i class="fas fa-star"></i>-(5,5tr đánh giá)</td>
+                                    <td>4.7 <i class="fas fa-star"></i><br />(5,5tr đánh giá)</td>
 
                                 </tr>
                                 </h3>
